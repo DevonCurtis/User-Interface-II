@@ -1,1 +1,117 @@
 /* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0;
+    max-width: 100%;
+}
+
+body{
+    background-color: #191A19;
+}
+
+section {
+    padding:4% 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: black;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+}
+
+.logo-name {
+    font-family: 'Neonderthaw', cursive;
+    font-size: 2rem;
+    color: #fff;
+    text-align: justify;
+}
+
+.top-content {
+    display: flex;
+    justify-content: center;
+}
+
+.image-btn {
+    background-image: url("https://unsplash.com/photos/WH7R0taFuhw/download?ixid=MnwxMjA3fDB8MXxhbGx8M3x8fHx8fDJ8fDE2NDMzMTE4NTA&force=true&w=640");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Comforter', cursive;
+    font-size: 50px;
+    width: 100%;
+    height: 400px;
+}
+
+footer{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.port-item {
+    text-align: center;
+    color: white;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+    padding: 5px 10px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    border: white solid 1px;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsive Layout */
+@media(max-width: 800px) {
+
+}
+@media(max-width: 500px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .links button{
+        width: 40%;
+        margin: 1% 0;
+    }
+    .top-content{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .row div{
+        width: 40%;
+    }
+}
